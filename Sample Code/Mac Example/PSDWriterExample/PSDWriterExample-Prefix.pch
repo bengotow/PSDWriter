@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PSDWriterExample' target in the 'PSDWriterExample' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

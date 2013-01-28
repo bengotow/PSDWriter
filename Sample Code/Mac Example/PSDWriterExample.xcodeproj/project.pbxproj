@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4314737B150948FE00E55DB7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4314737A150948FE00E55DB7 /* Cocoa.framework */; };
+		43147385150948FE00E55DB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43147383150948FE00E55DB7 /* InfoPlist.strings */; };
+		43147387150948FE00E55DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43147386150948FE00E55DB7 /* main.m */; };
+		4314738B150948FE00E55DB7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 43147389150948FE00E55DB7 /* Credits.rtf */; };
+		4314738E150948FE00E55DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4314738D150948FE00E55DB7 /* AppDelegate.m */; };
+		43147391150948FE00E55DB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4314738F150948FE00E55DB7 /* MainMenu.xib */; };
+		43DDC02616B63F4700255386 /* NSDataPSDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DDC02016B63F4700255386 /* NSDataPSDAdditions.m */; };
+		43DDC02716B63F4700255386 /* PSDLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DDC02216B63F4700255386 /* PSDLayer.m */; };
+		43DDC02816B63F4700255386 /* PSDWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DDC02516B63F4700255386 /* PSDWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43147376150948FE00E55DB7 /* PSDWriterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSDWriterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4314737A150948FE00E55DB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4314737D150948FE00E55DB7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4314737E150948FE00E55DB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4314737F150948FE00E55DB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43147382150948FE00E55DB7 /* PSDWriterExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSDWriterExample-Info.plist"; sourceTree = "<group>"; };
+		43147384150948FE00E55DB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43147386150948FE00E55DB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43147388150948FE00E55DB7 /* PSDWriterExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSDWriterExample-Prefix.pch"; sourceTree = "<group>"; };
+		4314738A150948FE00E55DB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4314738C150948FE00E55DB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4314738D150948FE00E55DB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43147390150948FE00E55DB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		43DDC01F16B63F4700255386 /* NSDataPSDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataPSDAdditions.h; sourceTree = "<group>"; };
+		43DDC02016B63F4700255386 /* NSDataPSDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataPSDAdditions.m; sourceTree = "<group>"; };
+		43DDC02116B63F4700255386 /* PSDLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDLayer.h; sourceTree = "<group>"; };
+		43DDC02216B63F4700255386 /* PSDLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDLayer.m; sourceTree = "<group>"; };
+		43DDC02316B63F4700255386 /* PSDWriter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSDWriter-Prefix.pch"; sourceTree = "<group>"; };
+		43DDC02416B63F4700255386 /* PSDWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDWriter.h; sourceTree = "<group>"; };
+		43DDC02516B63F4700255386 /* PSDWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43147373150948FE00E55DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4314737B150948FE00E55DB7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4314736B150948FE00E55DB7 = {
+			isa = PBXGroup;
+			children = (
+				43147380150948FE00E55DB7 /* PSDWriterExample */,
+				43147379150948FE00E55DB7 /* Frameworks */,
+				43147377150948FE00E55DB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43147377150948FE00E55DB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43147376150948FE00E55DB7 /* PSDWriterExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43147379150948FE00E55DB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4314737A150948FE00E55DB7 /* Cocoa.framework */,
+				4314737C150948FE00E55DB7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4314737C150948FE00E55DB7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4314737D150948FE00E55DB7 /* AppKit.framework */,
+				4314737E150948FE00E55DB7 /* CoreData.framework */,
+				4314737F150948FE00E55DB7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		43147380150948FE00E55DB7 /* PSDWriterExample */ = {
+			isa = PBXGroup;
+			children = (
+				43DDC01E16B63F4700255386 /* Shared */,
+				4314738C150948FE00E55DB7 /* AppDelegate.h */,
+				4314738D150948FE00E55DB7 /* AppDelegate.m */,
+				4314738F150948FE00E55DB7 /* MainMenu.xib */,
+				43147381150948FE00E55DB7 /* Supporting Files */,
+			);
+			path = PSDWriterExample;
+			sourceTree = "<group>";
+		};
+		43147381150948FE00E55DB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43147382150948FE00E55DB7 /* PSDWriterExample-Info.plist */,
+				43147383150948FE00E55DB7 /* InfoPlist.strings */,
+				43147386150948FE00E55DB7 /* main.m */,
+				43147388150948FE00E55DB7 /* PSDWriterExample-Prefix.pch */,
+				43147389150948FE00E55DB7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43DDC01E16B63F4700255386 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				43DDC01F16B63F4700255386 /* NSDataPSDAdditions.h */,
+				43DDC02016B63F4700255386 /* NSDataPSDAdditions.m */,
+				43DDC02116B63F4700255386 /* PSDLayer.h */,
+				43DDC02216B63F4700255386 /* PSDLayer.m */,
+				43DDC02316B63F4700255386 /* PSDWriter-Prefix.pch */,
+				43DDC02416B63F4700255386 /* PSDWriter.h */,
+				43DDC02516B63F4700255386 /* PSDWriter.m */,
+			);
+			name = Shared;
+			path = ../../../Library/Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43147375150948FE00E55DB7 /* PSDWriterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43147394150948FE00E55DB7 /* Build configuration list for PBXNativeTarget "PSDWriterExample" */;
+			buildPhases = (
+				43147372150948FE00E55DB7 /* Sources */,
+				43147373150948FE00E55DB7 /* Frameworks */,
+				43147374150948FE00E55DB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSDWriterExample;
+			productName = PSDWriterExample;
+			productReference = 43147376150948FE00E55DB7 /* PSDWriterExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4314736D150948FE00E55DB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 43147370150948FE00E55DB7 /* Build configuration list for PBXProject "PSDWriterExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4314736B150948FE00E55DB7;
+			productRefGroup = 43147377150948FE00E55DB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43147375150948FE00E55DB7 /* PSDWriterExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43147374150948FE00E55DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43147385150948FE00E55DB7 /* InfoPlist.strings in Resources */,
+				4314738B150948FE00E55DB7 /* Credits.rtf in Resources */,
+				43147391150948FE00E55DB7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43147372150948FE00E55DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43147387150948FE00E55DB7 /* main.m in Sources */,
+				4314738E150948FE00E55DB7 /* AppDelegate.m in Sources */,
+				43DDC02616B63F4700255386 /* NSDataPSDAdditions.m in Sources */,
+				43DDC02716B63F4700255386 /* PSDLayer.m in Sources */,
+				43DDC02816B63F4700255386 /* PSDWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43147383150948FE00E55DB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43147384150948FE00E55DB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43147389150948FE00E55DB7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4314738A150948FE00E55DB7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4314738F150948FE00E55DB7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43147390150948FE00E55DB7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43147392150948FE00E55DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		43147393150948FE00E55DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		43147395150948FE00E55DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../PSDWriter-Source\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSDWriterExample/PSDWriterExample-Prefix.pch";
+				INFOPLIST_FILE = "PSDWriterExample/PSDWriterExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Library\"",
+					"\"$(SRCROOT)/../../../PSDWriter-Source/build/Debug\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43147396150948FE00E55DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../PSDWriter-Source\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSDWriterExample/PSDWriterExample-Prefix.pch";
+				INFOPLIST_FILE = "PSDWriterExample/PSDWriterExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Library\"",
+					"\"$(SRCROOT)/../../../PSDWriter-Source/build/Debug\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43147370150948FE00E55DB7 /* Build configuration list for PBXProject "PSDWriterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43147392150948FE00E55DB7 /* Debug */,
+				43147393150948FE00E55DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43147394150948FE00E55DB7 /* Build configuration list for PBXNativeTarget "PSDWriterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43147395150948FE00E55DB7 /* Debug */,
+				43147396150948FE00E55DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4314736D150948FE00E55DB7 /* Project object */;
+}
