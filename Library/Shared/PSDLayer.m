@@ -10,7 +10,7 @@
 
 @implementation PSDLayer
 
-@synthesize imageData,name,opacity,rect;
+@synthesize imageData, name, opacity, rect, blendMode;
 
 - (void)dealloc
 {

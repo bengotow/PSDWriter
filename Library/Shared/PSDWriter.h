@@ -75,6 +75,11 @@ Note: Having layers partially off the edge of the canvas is not currently suppor
 @param offset The offset of the layer within the document. Use this to position layers within the PSD.
 */
 - (void)addLayerWithCGImage:(CGImageRef)image andName:(NSString*)name andOpacity:(float)opacity andOffset:(CGPoint)offset;
+- (void)addLayerWithCGImage:(CGImageRef)image
+                    andName:(NSString*)name
+                 andOpacity:(float)opacity
+                  andOffset:(CGPoint)offset
+               andBlendMode: (NSInteger) blendMode;
 
 /* Generates an NSData object representing a PSD image with the width and height specified by documentSize
 and the contents specified by the layers array. Note that this function can be (and really should be)
