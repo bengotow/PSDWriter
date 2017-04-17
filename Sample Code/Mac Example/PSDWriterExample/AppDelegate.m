@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PSDWriter.h"
+#import "PSDLayer.h"
 
 @implementation AppDelegate
 
@@ -24,9 +25,14 @@
     NSImage * layer1 = [[[NSImage alloc] initWithContentsOfFile: @"./../../../Images/layer1.png"] autorelease];
     NSImage * layer2 = [[[NSImage alloc] initWithContentsOfFile: @"./../../../Images/layer2.png"] autorelease];
     if (!layer1 || !layer2) {
-        NSLog(@"Example will fail - images missing!");
+        layer1 = [NSImage imageNamed:@"layer1.png"];
+        layer2 = [NSImage imageNamed:@"layer2.png"];
+       
     }
-    
+    if (!layer1 || !layer2) {
+        NSLog(@"Example will fail - images missing!");
+        NSBeep();
+    }
     // Initialize a new PSD writer with the desired canvas size
     PSDWriter * w = [[PSDWriter alloc] initWithDocumentSize: CGSizeMake(900, 900)];
     
@@ -37,9 +43,15 @@
     
     // Add our second layer
     CGImageRef layer2CG = [self newCGImageForNSImage: layer2];
-    [w addLayerWithCGImage:layer2CG andName:@"Apple Layer" andOpacity:0.5 andOffset:CGPointMake(100, 100)];
+    [w addLayerWithCGImage:layer2CG andName:@"Apple Layer"
+                andOpacity:0.5
+                 andOffset:CGPointMake(200, 200)
+              andBlendMode:kPSDBlendModeDisolve];
     CGImageRelease(layer2CG);
     
+    layer2CG = [self newCGImageForNSImage: layer2];
+    [w addLayerWithCGImage:layer2CG andName:@"Apple Layer 2" andOpacity:0.75 andOffset:CGPointMake(400, 100) andBlendMode:kPSDBlendModeDarken];
+    CGImageRelease(layer2CG);
     // Create the PSD data
     NSData * psd = [w createPSDData];
     
@@ -52,10 +64,14 @@
 }
 
 - (CGImageRef)newCGImageForNSImage:(NSImage*)i
-{
+{   CGImageRef imageRef = nil;
     CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)[i TIFFRepresentation], NULL);
-    CGImageRef imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
-    CFRelease(source);
+    if (source) {
+        imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+        CFRelease(source);
+    } else {
+        NSLog(@"newCGImageForNSImage failed %@", i);
+    }
     return imageRef;
 }
 
