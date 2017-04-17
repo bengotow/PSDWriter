@@ -5,7 +5,7 @@ A few years ago, I wrote an app called [Layers](http://layersforiphone.com/) for
 
 *Note: This library only writes PSDs, it does not read them. Because there are many versions of the PSD spec, and newer versions have a gazillion features, it's much easier to write a simple, layered PSD file than it is to read PSD. I have no plans to read PSD files anytime soon.*
 
-###Write a PSD file (iOS):
+### Write a PSD file (iOS):
 
 
     // grab the two images that we'll use
@@ -33,7 +33,7 @@ A few years ago, I wrote an app called [Layers](http://layersforiphone.com/) for
     [w release];
 
 
-###Write a PSD file (Mac OS X):
+### Write a PSD file (Mac OS X):
 
 	// grab the two images that we'll use
     NSImage * layer1 = [[[NSImage alloc] initWithContentsOfFile: @"layer1.png"] autorelease];
